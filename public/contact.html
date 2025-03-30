@@ -3,28 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="" />
   </head>
   <body>
-    <h1>Contact Me</h1>
+    <header>
+      <h1>Contact</h1>
+    </header>
     <hr />
-
-    <p><strong>Tel:</strong> <a href="tel:+919531537510">+91 95315 37510</a></p>
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:bikramsahanolimit@gmail.com"
-        >bikramsahanolimit@gmail.com</a
-      >
-    </p>
-
-    <h2>Address</h2>
-    <address>
-      n67/1, Kalikapur<br />
-      Barasat, Kolkata<br />
-      India, 700124
-    </address>
-
+    <main>
+      <section>
+        <h2>Contact Details</h2>
+        <p>
+          <strong>Tel:</strong> <a href="tel:+919531537510">+91 95315 37510</a>
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:bikramsahanolimit@gmail.com"
+            >bikramsahanolimit@gmail.com</a
+          >
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2>Address</h2>
+        <address>
+          n67/1, Kalikapur<br />
+          Barasat, Kolkata<br />
+          India, 700124
+        </address>
+      </section>
+      <hr />
+      <section>
+        <h2>
+          Contact Form
+        </h2>
+        <form
+          action="mailto:bikramsahanolimit@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <br />
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message here"
+            required
+          ></textarea>
+          <br />
+          <input type="submit" value="Send Message" />
+        </form>
+      </section>
+    </main>
     <hr />
+    <footer>
+      <p>&copy; 2024 Bikram Saha. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
